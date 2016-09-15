@@ -1,0 +1,15 @@
+<ul>
+    <li>Name: <%= @playlist.name %></li>
+    <li>Creator: <%= @playlist.creator %></li>
+    <li>Description: <%= @playlist.description %></li>
+</ul>
+
+<ul>
+  <% @playlist.songs.each do |song| %>
+    <li>Title: <%= song.title %>
+    <li>Artist: <%= song.artist %>
+    <li>Album: <%= song.album %>
+    <li>Genre: <%= song.genre %>
+    </li>
+  <% end %>
+</ul>
